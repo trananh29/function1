@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>increase1</title>
+</head>
+<body>
+<input type="number" oninput="changenum(this.value)" onchange="changenum(this.value)">
+<p id="result"></p>
+
+
+<script>
+  function changenum(x) {
+    let n=parseFloat(x);
+    return document.getElementById('result').innerHTML=n + 1;
+  }
+</script>
+</body>
+</html>

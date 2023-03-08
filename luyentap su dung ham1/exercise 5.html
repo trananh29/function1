@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="findstar()">find</button>
+<script>
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+
+
+    function findstar(n) {
+        n = prompt("Nhap ten ngoi sao", '');
+        m = '';
+        let index_x = 0;
+        check1 = true;
+        for (let i = 0; i < arr1.length; i++) {
+            if (n === arr1[i]) {
+                index_x = i;
+            } else {
+                check1 = false;
+            }
+        }
+
+        for (let j = 0; j < arr2.length; j++) {
+            if (index_x === j) {
+                m = arr2[i]
+            }
+        }
+    if(check1) {
+        alert('dung');
+    } else alert('sai');
+
+    }
+</script>
+</body>
+</html>
